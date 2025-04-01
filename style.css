@@ -1,0 +1,185 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background Gradient */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e84c4, #2b3a67);
+
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;  /* Stack elements vertically */
+}
+
+/* Todo App Container - Glassmorphism */
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-app h2 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.todo-app img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Input and Button Row */
+.row {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    background: #ff7f50;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff6347;
+}
+
+/* Task List */
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 18px 12px 40px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Checkbox Customization */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 14px;
+    left: 10px;
+}
+
+ul li.checked {
+    color: #ddd;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background: white;
+}
+
+/* Delete Button */
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+ul li span:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.header {
+    text-align: center;
+    margin-top: 40px !important;  /* Ensures the top margin is applied */
+    margin-bottom: 40px;          /* Adds more space between header and content */
+    padding: 10px 0;              /* Padding to create space around the header */
+    width: 100%;                  /* Ensures full width for centering */
+    color: #fff;                  /* Text color for contrast */
+    font-size: 20px;              /* Larger font size for prominence */
+    font-weight:lighter;            /* Bold text for the heading */
+    border-radius: 10px;          /* Rounded corners */
+}
+
+/* Positioning Designed by text at the right corner */
+.footer-text {
+    position: fixed;     /* Fixed positioning */
+    bottom: 10px;        /* 10px from the bottom of the page */
+    right: 20px;         /* 20px from the right edge */
+    font-size: 14px;     /* Font size for the footer text */
+    color: #fff;         /* Text color */
+}
+
+.clock {
+    position: fixed;        /* Fixed positioning */
+    top: 10px;              /* 10px from the top of the page */
+    left: 20px;             /* 20px from the left edge */
+    font-size: 18px;        /* Font size */
+    color: #fff;            /* White text color */
+    background-color: #2a5298; /* Background color */
+    padding: 10px;          /* Padding for spacing */
+    border-radius: 5px;     /* Rounded corners */
+    font-weight: bold;      /* Bold text */
+    text-align: center;     /* Center align the text */
+}
+
+.clock span {
+    font-size: 20px;        /* Larger font for time itself */
+    font-weight: normal;    /* Make time text regular weight */
+}
