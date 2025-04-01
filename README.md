@@ -1,7 +1,9 @@
 📝 To-Do App
+
 A simple and interactive To-Do List App built using HTML, CSS, and JavaScript. Easily add, edit, delete, and mark tasks as complete!
 
 🚀 Features
+
 ✅ Add new tasks effortlessly
 ✅ Mark tasks as completed
 ✅ Edit or delete tasks as needed
